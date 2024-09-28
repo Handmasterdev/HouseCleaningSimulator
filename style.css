@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0a0f29;
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    background-image: url('hero-background.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #ffaa00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7700;
+}
+
+.game-info, .game-screenshots, .download-section {
+    margin: 60px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ffaa00;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+p {
+    color: #ddd;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.screenshots img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 2px #0077cc;
+    transition: transform 0.3s ease;
+}
+
+.screenshots img:hover {
+    transform: scale(1.05);
+}
+
+.download-section {
+    background-color: #001f33;
+    padding: 40px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    color: #777;
+    background-color: #001f33;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
